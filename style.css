@@ -1,0 +1,208 @@
+body {
+  background: #e3f3ff;
+}
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.robothead {
+  position: relative;
+}
+.robothead .ears {
+  width: 320px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, 0);
+  background: #FFF;
+  border-radius: 24px;
+  border: 1px solid #ECEDF2;
+  box-shadow: 0 0 15px #ECEDF2, inset 0 0 5px #C8CCD8;
+  z-index: 0;
+}
+.robothead .helmet {
+  width: 280px;
+  height: 200px;
+  position: relative;
+  background: #FFF;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #C8CCD8, inset 0 0 50px 20px #ECEDF2;
+  z-index: 10;
+}
+.robothead .helmet:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 104px;
+  border-top: 104px solid #199EFC;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  height: 0;
+  width: 24px;
+}
+.robothead .helmet:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 280px;
+  height: 200px;
+  background: #C8CCD8;
+  border-radius: 100%;
+  -webkit-clip-path: inset(120px 44px 0 44px);
+          clip-path: inset(120px 44px 0 44px);
+}
+.robothead .visor {
+  position: absolute;
+  left: 50%;
+  top: 104px;
+  transform: translate(-50%, 0);
+  width: 192px;
+  height: 28px;
+  z-index: 50;
+  background: linear-gradient(0deg, #C8CCD8, #ECEDF2);
+  border-radius: 0 0 100% 100%;
+  box-shadow: 0 5px 10px #ECEDF2;
+}
+.robothead .face {
+  width: 280px;
+  height: 200px;
+  position: relative;
+  top: -200px;
+  z-index: 20;
+  background: #FFF;
+  border-radius: 100%;
+  box-shadow: inset 0 0 50px 5px #C8CCD8;
+  -webkit-clip-path: inset(120px 45px 0 45px);
+          clip-path: inset(120px 45px 0 45px);
+}
+.robothead .face:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 42px;
+  left: 30%;
+  width: 20px;
+  height: 10px;
+  background: #199EFC;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 5px #52BBFC;
+}
+.robothead .face:after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  bottom: 42px;
+  right: 30%;
+  background: #199EFC;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 5px #52BBFC;
+}
+.robotbody .torso {
+  width: 144px;
+  height: 160px;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #FFF;
+  border: 1px solid #ECEDF2;
+  border-radius: 100% 100% 120px 120px;
+  box-shadow: inset 0 10px 30px 5px #ECEDF2;
+}
+.robotbody .torso:before {
+  display: block;
+  content: '';
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 3px dotted #199EFC;
+  border-radius: 100%;
+  box-shadow: 0 0 2px #52BBFC, inset 0 0 2px #52BBFC;
+}
+.robotbody .leftarm {
+  width: 48px;
+  height: 130px;
+  position: absolute;
+  top: 190px;
+  left: 50px;
+  transform: rotate(20deg);
+  background: #FFF;
+  border-radius: 50% 0 24px 50%;
+  box-shadow: inset 0 10px 15px 5px #ECEDF2, 0 0 10px #ECEDF2;
+}
+.robotbody .leftarm:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  background: #C8CCD8;
+}
+.robotbody .rightarm {
+  width: 48px;
+  height: 130px;
+  position: absolute;
+  top: 190px;
+  right: 50px;
+  transform: rotate(-20deg);
+  background: #FFF;
+  border-radius: 0 50% 50% 24px;
+  box-shadow: inset 0 10px 15px 5px #ECEDF2, 0 0 10px #ECEDF2;
+}
+.robotbody .rightarm:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  background: #C8CCD8;
+}
+.robotbody .leftleg {
+  width: 48px;
+  height: 130px;
+  position: absolute;
+  top: 250px;
+  left: 68px;
+  background: #FFF;
+  border-radius: 0 0 15px 50%;
+  box-shadow: inset 0 10px 15px 5px #ECEDF2, 0 0 10px #ECEDF2;
+}
+.robotbody .leftleg:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 36%;
+  background: #C8CCD8;
+}
+.robotbody .rightleg {
+  width: 48px;
+  height: 130px;
+  position: absolute;
+  top: 250px;
+  right: 68px;
+  background: #FFF;
+  border-radius: 0 0 50% 15px;
+  box-shadow: inset 0 10px 15px 5px #ECEDF2, 0 0 10px #ECEDF2;
+}
+.robotbody .rightleg:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 36%;
+  background: #C8CCD8;
+}
